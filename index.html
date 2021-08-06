@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Ms Excel</title>
+</head>
+<body>
+    <div class="container">
+        <div class="title" contenteditable="true">Ms Excel</div>
+        <div class="menubar">
+            <span class="file">File
+                <ul class="file_child hide" >
+                    <li>Save</li>
+                    <li>Clear</li>
+                </ul>
+            </span>
+            <span class="help">Help
+                <div id="myModal" class="modal hide">
+                    <div class="modal-content">
+                      <ul>
+                          <li></li>
+                      </ul>
+                      <span class="close">&times;</span>
+                    </div>
+                </div>
+            </span>
+        </div>
+        <div class="menu_options_section">
+            <div class="BIU_area">
+                <span class="material-icons">format_bold</span>
+                <span class="material-icons">format_italic</span>
+                <span class="material-icons">format_underlined</span>       
+            </div>
+            <div class="font_area">
+                <select class="font">
+                    <option>Arial</option>
+                    <option>Courier New</option>
+                    <option>Times New Roman</option>
+                    <option>Georgia</option>
+                    <option>Verdana</option>
+                    <option>Lucida Console</option>
+                    <option>sans-serif</option>
+                </select>
+                <select class="font_size">
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>14</option>
+                    <option>16</option>
+                    <option>20</option>
+                    <option>24</option>
+                </select>
+            </div>
+            <div class="align_area">
+                <span class="material-icons">format_align_left</span>
+                <span class="material-icons">format_align_center</span>
+                <span class="material-icons">format_align_right</span>
+            </div>
+            <div class="color_area">
+                <label class="color-picker">
+                    <span class="material-icons colors">format_color_fill
+                        <input type=color class="colorPal" value="#000000">
+                    </span>
+                </label>
+                <label class="color-picker2">
+                    <span class="material-icons">format_color_text
+                        <input type=color class="fontColorsPal" value="#000000">
+                    </span>
+                </label>
+            </div>
+        </div>
+        <div class="formula_Section">
+            <div class="selected_Cell_Div"></div>
+            <input class="formula_input_section"></input>
+        </div>
+        <div class="grid">
+            <div class="blank"></div>
+            <div class="row_Num_section"></div>
+            <div class="col_Num_section"></div>
+            <div class="cell_section"></div>
+        </div>
+        <div class="sheet_section"></div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="./menuBarScript.js"></script>
+    <script src="./storeData.js"></script>
+</body>
+</html>
