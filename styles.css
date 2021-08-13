@@ -205,14 +205,7 @@ body {
   box-shadow: 1px 1px 2px rgb(24, 24, 24);
   color: rgb(3, 3, 20);
 }
-.file_child > li {
-  padding: 0.3rem;
-}
-.file_child > li:hover {
-  background-color: #636e7286;
-  color: white;
-  font-weight: 900;
-}
+
 .hide {
   display: none;
 }
@@ -258,4 +251,13 @@ ul li {
   font-size: 2rem;
   margin-top: -1rem;
   font-weight: bolders;
+}
+.file_child > li {
+  padding: 0.3rem;
+  margin-left: 0%;
+}
+.file_child > li:hover {
+  background-color: #636e7286;
+  color: white;
+  font-weight: 900;
 }
